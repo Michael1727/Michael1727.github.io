@@ -1,0 +1,151 @@
+body {
+    background: black;
+    color: white;
+}
+
+html {scroll-behavior: smooth;}
+
+header {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+
+.btn {
+    background: orange;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 40px;
+}
+
+.stream,
+.games,
+.b {
+    margin: auto;
+    width: 80%;
+    padding: 50px 50px 0px 0px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+.b p {
+    font-size: 20px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between
+}
+
+span {
+    display: block;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    justify-content: center;
+}
+
+.b {
+    background-image: url(img/banner.png);
+    min-height: 700px;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+}
+
+/***********/
+
+
+.banner {
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.videos iframe {
+    width: 100%!important;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+@media screen and (max-width:767px) {
+    
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: black;
+}
+
+    .banner {
+        background-image: none;
+        min-height: 200px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .videos,
+    .boxes {
+        flex-wrap: wrap;
+    }
+
+    .boxes>div {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+ header .btn,
+    nav {
+        display: none;
+    }
+
+    nav.open {
+        display: block;
+        position: absolute;
+    top: 41px;
+    left: 0;
+    width: 100%;
+    padding-bottom: 15px;
+    background: black;
+    }
+    .menu-btn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    .link {
+        margin: 20px;
+        display: block;
+       
+    }
+}

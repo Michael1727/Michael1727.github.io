@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antihype</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+
+
+<body>
+    <header>
+
+        <a href="#" class='logo'> <img src="img/logo.svg" alt=""></a>
+        <nav>
+            <a href="#" class='link'>Главная</a>
+
+            <a href="#f" class='link'>Обо мне</a>
+
+            <a href="#" class='link'>Мои стримы</a>
+        </nav>
+
+        <span class="btn2">&equiv;</span>
+
+        <a href="#" class='btn'>напиши мне</a>
+
+    </header>
+
+
+
+
+
+    <main>
+        <div class="b">
+
+            <h1>Я геймер</h1>
+
+            <p> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni <br> quis commodi harum dignissimos
+                itaque error
+                consectetur quasi. Eveniet, <br> blanditiis nisi repellat pariatur aut distinctio <br> magnam adipisci
+                mollitia totam,
+                officiis saepe.</p>
+
+            <a href="#" class='btn'> узнать детали</a>
+        </div>
+
+
+        <div class="games" id="f">
+            <h2>Мои любимые игры</h2>
+            <div class="boxes">
+
+                <div>
+                    <img src="img/chess.jpg" alt="" width="400">
+                    <span>10000 подписчиков</span>
+                </div>
+                <div>
+                    <img src="img/fl.webp" alt="" width="400">
+                    <span>100 подписчиков</span>
+                </div>
+                <div>
+                    <img src="img/sims.jpg" alt="" width="400">
+                    <span>100 подписчиков</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="stream" id="s">
+            <h2>ПОДКЛЮЧАЙТЕСЬ К СТРИМАМ</h2>
+
+            <!--   <div class="videos">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/m9WobSiDvq4?si=JP-8gmRg0QYffctB"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7KW8KbEHF_w?si=tr63RVNvQkBmNDSO"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+            </div> -->
+            <div class="slider">
+                <img src="img/1.jpg" alt="">
+                <img src="img/2.jpeg" alt="">
+                <img src="img/3.jpeg" alt="">
+                <img src="img/4.jpg" alt="">
+                <img src="img/5.jpeg" alt="">
+                <img src="img/6.jpg" alt="">
+                <img src="img/7.jpg" alt="">
+                <img src="img/8.jpeg" alt="">
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <a href="#" target="_blank">
+            <img src="img/1.svg" alt="">
+        </a>
+
+        <a href="#" target="_blank">
+            <img src="img/2.svg" alt="">
+        </a>
+
+        <a href="#" target="_blank">
+            <img src="img/3.svg" alt="">
+        </a>
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <script>
+        $('.slider').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+           // dots: true, //
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+    </script>
+
+    <script>
+        $('.btn, .btn2').click(function() {
+            $('nav').toggleClass('open');
+        })
+    </script>
+
+
+</body>
+
+</html>
